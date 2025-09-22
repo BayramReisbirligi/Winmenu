@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Reis Production 2025")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Winmenu")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("25.5.1.4")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("25.5.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("25.5.1+ecd0f4c0ff13b5db27223e002c07f810bd149fc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Reis Production")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Winmenu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("25.5.1.4")]

@@ -44,6 +44,10 @@
     <PackageReference Include="WinUIEx" Version="2.6.0" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="Microsoft.UI.Xaml\Assets\Images\Png\ReisProduction.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -145,6 +149,7 @@
     <PackageProjectUrl>https://reisproduction.com</PackageProjectUrl>
     <RepositoryUrl>https://github.com/BayramReisbirligi/Winmenu</RepositoryUrl>
     <Title>$(AssemblyName)</Title>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IsPublishable>False</IsPublishable>
