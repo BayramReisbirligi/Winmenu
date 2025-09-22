@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="database-CantConnect" xml:space="preserve">
+    <value>Veri tabanına bağlanamıyoruz!</value>
+  </data>
+  <data name="internal-EncounteredAnError" xml:space="preserve">
+    <value>Hata ile karşılaştık!</value>
+  </data>
+  <data name="internal-Ok" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="database-Welcome" xml:space="preserve">
+    <value>Reis Production ile Windows Doktorunuz Görevdedir!
+Hata ile karşılaşırsanız lütfen sorunu bizle paylaşın!
+Geri dönüşleriniz hepimiz için değerli!</value>
+  </data>
+  <data name="database-WelcomeTitle" xml:space="preserve">
+    <value>Bizi tercih ettiğiniz için teşekkür ederiz!</value>
+  </data>
+  <data name="database-WelcomeButton" xml:space="preserve">
+    <value>Rica ederim &lt;3</value>
+  </data>
+  <data name="database-ErrorWhileLoading" xml:space="preserve">
+    <value>Veritabanı yüklenirken bir hata ile karşılaştık!</value>
+  </data>
+  <data name="database-ErrorWhileUpdating" xml:space="preserve">
+    <value>Kullanıcı veritabanı güncellenirken bir hata ile karşılaştık!</value>
+  </data>
+  <data name="database-CantFound" xml:space="preserve">
+    <value>Veri tabanınızı bulamadık :(</value>
+  </data>
+  <data name="HomeView.Content" xml:space="preserve">
+    <value>Ana menü</value>
+  </data>
+  <data name="GameModeView.Content" xml:space="preserve">
+    <value>Oyun modu</value>
+  </data>
+  <data name="CleaningView.Content" xml:space="preserve">
+    <value>Temizlik</value>
+  </data>
+  <data name="UpdatesView.Content" xml:space="preserve">
+    <value>Güncelle</value>
+  </data>
+  <data name="ExtraFeaturesView.Content" xml:space="preserve">
+    <value>Ekstra özellikler</value>
+  </data>
+  <data name="GeneralView.Content" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="settings-Sound.Content" xml:space="preserve">
+    <value>Ses</value>
+  </data>
+  <data name="settings-SpitalAudio.Text" xml:space="preserve">
+    <value>Mekansal ses modu</value>
+  </data>
+  <data name="settings-SelectedLanguage.Text" xml:space="preserve">
+    <value>Seçilen dil</value>
+  </data>
+  <data name="settings-UseSearch.Text" xml:space="preserve">
+    <value>Aramayı kullan</value>
+  </data>
+  <data name="settings-TopMost.Text" xml:space="preserve">
+    <value>Winmenu'u en üstte göster</value>
+  </data>
+  <data name="settings-ChangeTheme.Text" xml:space="preserve">
+    <value>Temayı değiştir</value>
+  </data>
+  <data name="settings-Notification.Text" xml:space="preserve">
+    <value>Bildirim göster</value>
+  </data>
+  <data name="settings-RunningBackground.Text" xml:space="preserve">
+    <value>Arka planda çalış</value>
+  </data>
+  <data name="settings-AutoStart.Text" xml:space="preserve">
+    <value>Otomatik başlat</value>
+  </data>
+  <data name="settings-SystemDefault" xml:space="preserve">
+    <value>Sistem varsayılanı</value>
+  </data>
+  <data name="internal-AreYouSure" xml:space="preserve">
+    <value>Emin misiniz?</value>
+  </data>
+  <data name="settings-CloseApplication" xml:space="preserve">
+    <value>Uygulamayı kapatmak istiyor musunuz?</value>
+  </data>
+  <data name="internal-Sure" xml:space="preserve">
+    <value>Eminim</value>
+  </data>
+  <data name="internal-Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="settings-LightTheme" xml:space="preserve">
+    <value>Açık Tema</value>
+  </data>
+  <data name="settings-DarkTheme" xml:space="preserve">
+    <value>Koyu Tema</value>
+  </data>
+  <data name="settings-MediaVolume.Text" xml:space="preserve">
+    <value>Medya sesi</value>
+  </data>
+  <data name="settings-WinVolume.Text" xml:space="preserve">
+    <value>Windows'un Ses Seviyesi</value>
+  </data>
+  <data name="settings-EnableSound.Text" xml:space="preserve">
+    <value>Ses efektlerini kullan</value>
+  </data>
+  <data name="home-PrivacyPolicy.Text" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="home-PrivacyPolicyDes.Text" xml:space="preserve">
+    <value>Winmenu, kullanıcıların kişisel verilerini toplamaz, saklamaz veya paylaşmaz. Bu uygulama yalnızca yerel cihazda çalışan ve kullanıcıya ait hiçbir kişisel veriyi dışarıya göndermeyen bir yazılımdır. Uygulamayı kullanarak, kişisel verilerinizin korunacağını ve gizli tutulacağını bilerek rahatça kullanabilirsiniz. Bizim için kullanıcı gizliliği her şeyden önce gelir ve bu konuda en yüksek güvenliği sağlamaya özen gösteriyoruz.</value>
+  </data>
+  <data name="home-AboutTB.Text" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="home-AboutDes.Text" xml:space="preserve">
+    <value>Winmenu, Windows sistemlerinizi özelleştirmenizi ve performansını artırmanızı amaçlayan bir araçtır. Bu uygulama, özellikle oyunculara yönelik özel özellikler sunarak, sistem kaynaklarını verimli kullanmanıza yardımcı olur. Uygulama, basit ve kullanıcı dostu bir arayüzle, PC'nizi hızlandırmak ve optimize etmek için gereken tüm özellikleri tek bir noktada toplar. Winmenu, Windows'taki önemli ayarları kişiselleştirmenize imkan tanır ve böylece daha sağlıklı bir sistem performansı elde etmenize yardımcı olur.</value>
+  </data>
+  <data name="database-Delete" xml:space="preserve">
+    <value>Veritabanını silip tekrar yükleyelim mi?</value>
+  </data>
+  <data name="internal-No" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="internal-Restart" xml:space="preserve">
+    <value>Bu işlem yeniden başlatma gerektirir.
+Yeniden başlatalım mı?</value>
+  </data>
+  <data name="settings-SystemDefaults.Text" xml:space="preserve">
+    <value>Varsayılan sistem ayarlarını geri yükle</value>
+  </data>
+  <data name="settings-DeleteDatabase.Text" xml:space="preserve">
+    <value>Veritabanını sil</value>
+  </data>
+  <data name="launch-ConnectNet" xml:space="preserve">
+    <value>Lütfen bir internete bağlanın</value>
+  </data>
+  <data name="launch-Administrator" xml:space="preserve">
+    <value>Lütfen Winmenu'u yönetici izni ile açın</value>
+  </data>
+  <data name="launch-CannotRun" xml:space="preserve">
+    <value>Winmenu çalıştırılamıyor</value>
+  </data>
+  <data name="launch-Arguments" xml:space="preserve">
+    <value>Kısayollar (Argümanlar) anlaşılamadı</value>
+  </data>
+  <data name="launch-AlreadyRunning" xml:space="preserve">
+    <value>Winmenu şuanda zaten çalışıyor</value>
+  </data>
+  <data name="internal-Mistake" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="for-Security" xml:space="preserve">
+    <value>Güvenlik</value>
+  </data>
+  <data name="settings-ShowPassword.Content" xml:space="preserve">
+    <value>Şifreyi göster</value>
+  </data>
+  <data name="settings-RequestPassword.Text" xml:space="preserve">
+    <value>Uygulama genelinde şifre sor</value>
+  </data>
+  <data name="internal-Change" xml:space="preserve">
+    <value>Değiştir</value>
+  </data>
+  <data name="for-AFK" xml:space="preserve">
+    <value>AFK için</value>
+  </data>
+  <data name="do-Password" xml:space="preserve">
+    <value>bir şifre girmeniz gerekiyor</value>
+  </data>
+  <data name="for-Settings" xml:space="preserve">
+    <value>Hassas ayarlara erişebilmek için</value>
+  </data>
+  <data name="internal-Successful" xml:space="preserve">
+    <value>Başarılı</value>
+  </data>
+  <data name="internal-Information" xml:space="preserve">
+    <value>Bilgilendirme</value>
+  </data>
+  <data name="internal-Changed" xml:space="preserve">
+    <value>değiştirildi</value>
+  </data>
+  <data name="internal-Canceled" xml:space="preserve">
+    <value>İşlem iptal edildi</value>
+  </data>
+  <data name="settings-AlignSystemDefaults.Text" xml:space="preserve">
+    <value>Sistem varsayılanlarına ayak uydur</value>
+  </data>
+  <data name="settings-IncreasedProtection.Text" xml:space="preserve">
+    <value>Artırılmış koruma</value>
+  </data>
+  <data name="internal-SearchIn" xml:space="preserve">
+    <value>Ara - </value>
+  </data>
+  <data name="TroubleshootingView.Content" xml:space="preserve">
+    <value>Sorun gider</value>
+  </data>
+  <data name="internal-Forward" xml:space="preserve">
+    <value>İleri</value>
+  </data>
+  <data name="internal-Back" xml:space="preserve">
+    <value>Geri</value>
+  </data>
+  <data name="internal-Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="internal-Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="select-Color" xml:space="preserve">
+    <value>Renk seçin</value>
+  </data>
+  <data name="for-IconsColor" xml:space="preserve">
+    <value>Simge renkleri için</value>
+  </data>
+  <data name="for-BackgroundColor" xml:space="preserve">
+    <value>Arka plan rengi için</value>
+  </data>
+  <data name="internal-Loading" xml:space="preserve">
+    <value>Yükleniyor</value>
+  </data>
+  <data name="internal-AlwaysInTop" xml:space="preserve">
+    <value>Her zaman en üstte</value>
+  </data>
+  <data name="internal-Close" xml:space="preserve">
+    <value>Kapat</value>
+  </data>
+  <data name="internal-Copyright" xml:space="preserve">
+    <value>Telif Hakkı © 2025 Reis Production - Tüm hakları saklıdır.</value>
+  </data>
+  <data name="internal-UserSettings" xml:space="preserve">
+    <value>Kullanıcı ayarları</value>
+  </data>
+  <data name="internal-PleaseWait" xml:space="preserve">
+    <value>Lütfen biraz bekleyin...</value>
+  </data>
+  <data name="internal-Loaded" xml:space="preserve">
+    <value>Yüklendi</value>
+  </data>
+  <data name="internal-NotSupport" xml:space="preserve">
+    <value>Şu an desteklenmiyor :(</value>
+  </data>
+  <data name="internal-Sorry" xml:space="preserve">
+    <value>Üzgünüz</value>
+  </data>
+  <data name="launch-Restart" xml:space="preserve">
+    <value>Yeniden başlat</value>
+  </data>
+  <data name="internal-Cannot" xml:space="preserve">
+    <value>Bu işlem gerçekleştirilemiyor.</value>
+  </data>
+  <data name="internal-Language" xml:space="preserve">
+    <value>tr-TR</value>
+  </data>
+  <data name="internal-OpenClose" xml:space="preserve">
+    <value>Aç/Kapat</value>
+  </data>
+  <data name="internal-ShowHide" xml:space="preserve">
+    <value>Göster/Gizle</value>
+  </data>
+  <data name="AboutView.Content" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="WindowsView.Content" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="exception-Time" xml:space="preserve">
+    <value>Hata zamanı</value>
+  </data>
+  <data name="exception-Creating" xml:space="preserve">
+    <value>Log dosyası oluşturulurken bir hata oluştu</value>
+  </data>
+  <data name="for-Winmenu" xml:space="preserve">
+    <value>Winmenu için</value>
+  </data>
+  <data name="internal-CheckOtherWinmenu" xml:space="preserve">
+    <value>Başka Winmenu var mı diye kontrol ediliyor...</value>
+  </data>
+</root>

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Winmenu (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Winmenu (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

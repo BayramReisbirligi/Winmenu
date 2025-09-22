@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <RootNamespace>Winmenu</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x64</Platforms>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <PublishProfile>win-x64.pubxml</PublishProfile>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.xaml" />
+    <None Remove="Microsoft.UI.Xaml\Assets\Meta\ShellPage.xaml" />
+    <None Remove="Microsoft.UI.Xaml\Assets\Views\GeneralView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Microsoft.UI.Xaml\Assets\Views\AboutView.xaml" />
+    <Page Remove="Microsoft.UI.Xaml\Assets\Views\ExtraFeaturesView.xaml" />
+    <Page Remove="Microsoft.UI.Xaml\Assets\Views\SettingsView.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.UI.Xaml\Assets\Images\Ico\ReisProduction.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <!--
+    Defining the "Msix" ProjectCapability here allows the Single-project MSIX Packaging
+    Tools extension to be activated for this project even if the Windows App SDK Nuget
+    package has not yet been restored.
+  -->
+  <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4654" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
+    <PackageReference Include="WinUIEx" Version="2.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Microsoft.UI.Xaml\Assets\Images\Png\ReisProduction.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Microsoft.UI.Xaml\Assets\Views\AboutView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Microsoft.UI.Xaml\Assets\Views\ExtraFeaturesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <Page Update="Microsoft.UI.Xaml\Assets\Views\GeneralView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <None Update="Microsoft.UI.Xaml\Assets\Views\SettingsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <Page Update="Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Microsoft.UI.Xaml\Assets\Meta\ShellPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Microsoft.UI.Xaml\Assets\Databases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\System.Windows.Forms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Microsoft.UI.Windowing" />
+    <Using Include="Microsoft.UI.Xaml" />
+    <Using Include="Microsoft.UI.Xaml.Controls" />
+    <Using Include="Microsoft.UI.Xaml.Media" />
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Meta" />
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Models" />
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Services.Interop">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Services.Managers" />
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Services.Managers.ReturnManager">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Services.NativeMethods">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Utilities.Constants">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Utilities.Enums" />
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Utilities.Readonlys">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Utilities.Varaibles">
+      <Static>True</Static>
+    </Using>
+    <Using Include="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Views" />
+    <Using Include="WinUIEx" />
+  </ItemGroup>
+
+  <!--
+    Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
+    Explorer "Package and Publish" context menu entry to be enabled for this project even if
+    the Windows App SDK Nuget package has not yet been restored.
+  -->
+  <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
+    <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
+  </PropertyGroup>
+
+  <!-- Publish Properties -->
+  <PropertyGroup>
+    <PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>
+    <PublishReadyToRun Condition="'$(Configuration)' != 'Debug'">True</PublishReadyToRun>
+    <PublishTrimmed Condition="'$(Configuration)' == 'Debug'">False</PublishTrimmed>
+    <PublishTrimmed Condition="'$(Configuration)' != 'Debug'">False</PublishTrimmed>
+    <PackageCertificateThumbprint>67B4DB033467C3101C17E9F10158995AE40EDC08</PackageCertificateThumbprint>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
+    <ApplicationIcon>Microsoft.UI.Xaml\Assets\Images\Ico\ReisProduction.ico</ApplicationIcon>
+    <WindowsPackageType>None</WindowsPackageType>
+    <Version>25.5.1</Version>
+    <Authors>Reis Production</Authors>
+    <Product>$(Authors)</Product>
+    <Description>Winmenu</Description>
+    <Copyright>Reis Production 2025</Copyright>
+    <PackageIcon>ReisProduction.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>$(AssemblyName)</PackageTags>
+    <PackageReleaseNotes>Winmenu</PackageReleaseNotes>
+    <AssemblyVersion>25.5.1.4</AssemblyVersion>
+    <FileVersion>25.5.1.4</FileVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageProjectUrl>https://reisproduction.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/BayramReisbirligi/Winmenu</RepositoryUrl>
+    <Title>$(AssemblyName)</Title>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IsPublishable>False</IsPublishable>
+  </PropertyGroup>
+</Project>

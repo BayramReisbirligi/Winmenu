@@ -1,0 +1,17 @@
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Winmenu.csproj.AssemblyReference.cache
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\App.g.i.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\App.g.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MainWindow.g.i.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MainWindow.g.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.g.i.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.g.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ShellPage.g.i.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ShellPage.g.cs
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\App.xaml
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MainWindow.xaml
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.xaml
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ShellPage.xaml
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\App.xbf
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\MainWindow.xbf
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ContextMenuStrip.xbf
+C:\Users\BayramReis\Desktop\Software\GitHub\ReisProduction\Winmenu\obj\x64\Debug\net9.0-windows10.0.26100.0\win-x64\Microsoft.UI.Xaml\Assets\Meta\ShellPage.xbf
