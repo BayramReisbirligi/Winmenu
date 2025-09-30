@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="database-CantConnect" xml:space="preserve">
+    <value>We can't connect to the database!</value>
+  </data>
+  <data name="internal-EncounteredAnError" xml:space="preserve">
+    <value>We encountered an error!</value>
+  </data>
+  <data name="internal-Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="database-Welcome" xml:space="preserve">
+    <value>Your Windows Doctor is on Duty with Reis Production!
+If you encounter an error, please share the problem with us!
+Your feedback is valuable to all of us!</value>
+  </data>
+  <data name="database-WelcomeTitle" xml:space="preserve">
+    <value>Thank you for choosing us!</value>
+  </data>
+  <data name="database-WelcomeButton" xml:space="preserve">
+    <value>You're welcome &lt;3</value>
+  </data>
+  <data name="database-ErrorWhileLoading" xml:space="preserve">
+    <value>An error occurred while loading the database!</value>
+  </data>
+  <data name="database-ErrorWhileUpdating" xml:space="preserve">
+    <value>We encountered an error while updating the user database!</value>
+  </data>
+  <data name="database-CantFound" xml:space="preserve">
+    <value>We couldn't find the database :(</value>
+  </data>
+  <data name="HomeView.Content" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="GameModeView.Content" xml:space="preserve">
+    <value>Game mode</value>
+  </data>
+  <data name="CleaningView.Content" xml:space="preserve">
+    <value>Cleaning</value>
+  </data>
+  <data name="UpdatesView.Content" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="ExtraFeaturesView.Content" xml:space="preserve">
+    <value>Extra features</value>
+  </data>
+  <data name="GeneralView.Content" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="settings-Sound.Content" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="settings-SpitalAudio.Text" xml:space="preserve">
+    <value>Spital audio mode</value>
+  </data>
+  <data name="settings-SelectedLanguage.Text" xml:space="preserve">
+    <value>Selected language</value>
+  </data>
+  <data name="settings-UseSearch.Text" xml:space="preserve">
+    <value>Use search</value>
+  </data>
+  <data name="settings-TopMost.Text" xml:space="preserve">
+    <value>Show Winmenu on top</value>
+  </data>
+  <data name="settings-ChangeTheme.Text" xml:space="preserve">
+    <value>Change theme</value>
+  </data>
+  <data name="settings-Notification.Text" xml:space="preserve">
+    <value>Show notification</value>
+  </data>
+  <data name="settings-RunningBackground.Text" xml:space="preserve">
+    <value>Running background</value>
+  </data>
+  <data name="settings-AutoStart.Text" xml:space="preserve">
+    <value>Auto start</value>
+  </data>
+  <data name="settings-SystemDefault" xml:space="preserve">
+    <value>System default</value>
+  </data>
+  <data name="internal-AreYouSure" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="settings-CloseApplication" xml:space="preserve">
+    <value>Do you want to close the app?</value>
+  </data>
+  <data name="internal-Sure" xml:space="preserve">
+    <value>Sure</value>
+  </data>
+  <data name="internal-Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="settings-LightTheme" xml:space="preserve">
+    <value>Light Theme</value>
+  </data>
+  <data name="settings-DarkTheme" xml:space="preserve">
+    <value>Dark Theme</value>
+  </data>
+  <data name="settings-MediaVolume.Text" xml:space="preserve">
+    <value>Media volume</value>
+  </data>
+  <data name="settings-WinVolume.Text" xml:space="preserve">
+    <value>Windows volume</value>
+  </data>
+  <data name="settings-EnableSound.Text" xml:space="preserve">
+    <value>Enable sound effect</value>
+  </data>
+  <data name="home-PrivacyPolicy.Text" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="home-PrivacyPolicyDes.Text" xml:space="preserve">
+    <value>Winmenu does not collect, store or share users' personal data. This application is a software that only runs on the local device and does not send any personal data of the user to the outside. By using the application, you can use it comfortably knowing that your personal data will be protected and kept confidential. User privacy comes first for us and we take care to provide the highest security in this regard.</value>
+  </data>
+  <data name="home-AboutTB.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="home-AboutDes.Text" xml:space="preserve">
+    <value>Winmenuis a tool that aims to customize your Windows systems and increase their performance. This application helps you use system resources efficiently by offering special features especially for gamers. The application gathers all the features needed to speed up and optimize your PC in one place with a simple and user-friendly interface. Winmenu allows you to customize important settings in Windows and thus helps you achieve a healthier system performance.</value>
+  </data>
+  <data name="database-Delete" xml:space="preserve">
+    <value>Should we delete the database and reinstall it?</value>
+  </data>
+  <data name="internal-No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="internal-Restart" xml:space="preserve">
+    <value>This process requires a reboot.
+Should we reboot?</value>
+  </data>
+  <data name="settings-SystemDefaults.Text" xml:space="preserve">
+    <value>Return system default settings</value>
+  </data>
+  <data name="settings-DeleteDatabase.Text" xml:space="preserve">
+    <value>Delete database</value>
+  </data>
+  <data name="launch-ConnectNet" xml:space="preserve">
+    <value>Please connect to a network
+</value>
+  </data>
+  <data name="launch-Administrator" xml:space="preserve">
+    <value>Please run Winmenu with administrator privileges</value>
+  </data>
+  <data name="launch-CannotRun" xml:space="preserve">
+    <value>Cannot run Winmenu</value>
+  </data>
+  <data name="launch-Arguments" xml:space="preserve">
+    <value>Shortcuts (Arguments) are not understood</value>
+  </data>
+  <data name="launch-AlreadyRunning" xml:space="preserve">
+    <value>Winmenu is already running now</value>
+  </data>
+  <data name="internal-Mistake" xml:space="preserve">
+    <value>Mistake</value>
+  </data>
+  <data name="for-Security" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="settings-ShowPassword.Content" xml:space="preserve">
+    <value>Show password</value>
+  </data>
+  <data name="settings-RequestPassword.Text" xml:space="preserve">
+    <value>Ask for password throughout the application</value>
+  </data>
+  <data name="internal-Change" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="for-AFK" xml:space="preserve">
+    <value>for AFK</value>
+  </data>
+  <data name="do-Password" xml:space="preserve">
+    <value>You need to set a password</value>
+  </data>
+  <data name="for-Settings" xml:space="preserve">
+    <value>to access precise settings</value>
+  </data>
+  <data name="internal-Successful" xml:space="preserve">
+    <value>Successful</value>
+  </data>
+  <data name="internal-Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="internal-Changed" xml:space="preserve">
+    <value>changed</value>
+  </data>
+  <data name="internal-Canceled" xml:space="preserve">
+    <value>Transaction canceled</value>
+  </data>
+  <data name="settings-AlignSystemDefaults.Text" xml:space="preserve">
+    <value>Align with system defaults</value>
+  </data>
+  <data name="settings-IncreasedProtection.Text" xml:space="preserve">
+    <value>Increased protection</value>
+  </data>
+  <data name="internal-SearchIn" xml:space="preserve">
+    <value>Search - </value>
+  </data>
+  <data name="TroubleshootingView.Content" xml:space="preserve">
+    <value>Troubleshooting</value>
+  </data>
+  <data name="internal-Forward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="internal-Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="internal-Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="internal-Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="select-Color" xml:space="preserve">
+    <value>Select color</value>
+  </data>
+  <data name="for-IconsColor" xml:space="preserve">
+    <value>for Icons color</value>
+  </data>
+  <data name="for-BackgroundColor" xml:space="preserve">
+    <value>for Background color</value>
+  </data>
+  <data name="internal-Loading" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="internal-AlwaysInTop" xml:space="preserve">
+    <value>Always in top</value>
+  </data>
+  <data name="internal-Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="internal-Copyright" xml:space="preserve">
+    <value>Copyright © 2025 Reis Production - All rights reserved.</value>
+  </data>
+  <data name="internal-UserSettings" xml:space="preserve">
+    <value>User settings</value>
+  </data>
+  <data name="internal-PleaseWait" xml:space="preserve">
+    <value>Please wait a moment...</value>
+  </data>
+  <data name="internal-Loaded" xml:space="preserve">
+    <value>Loaded</value>
+  </data>
+  <data name="internal-NotSupport" xml:space="preserve">
+    <value>Currently not supported :(</value>
+  </data>
+  <data name="internal-Sorry" xml:space="preserve">
+    <value>Sorry</value>
+  </data>
+  <data name="launch-Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="internal-Cannot" xml:space="preserve">
+    <value>This operation cannot be performed.</value>
+  </data>
+  <data name="internal-Language" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="internal-OpenClose" xml:space="preserve">
+    <value>Open/Close</value>
+  </data>
+  <data name="internal-ShowHide" xml:space="preserve">
+    <value>Show/Hide</value>
+  </data>
+  <data name="AboutView.Content" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="WindowsView.Content" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="exception-Time" xml:space="preserve">
+    <value>Exception Time</value>
+  </data>
+  <data name="exception-Creating" xml:space="preserve">
+    <value>An error occurred while creating the log file</value>
+  </data>
+  <data name="for-Winmenu" xml:space="preserve">
+    <value>for Winmenu</value>
+  </data>
+  <data name="internal-CheckOtherWinmenu" xml:space="preserve">
+    <value>Checking if there are any other Winmenus...</value>
+  </data>
+</root>

@@ -1,0 +1,172 @@
+<Page
+    x:Class="ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Meta.ShellPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ReisProduction.Winmenu.Microsoft.UI.Xaml.Assets.Meta"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    PointerWheelChanged="ShellPage_PointerWheelChanged"
+    PointerPressed="ShellPage_PointerPressed"
+    SizeChanged="ShellPage_SizeChanged"
+    Loaded="ShellPage_Loaded"
+    mc:Ignorable="d">
+    <Grid>
+        <NavigationView x:Name="NavViewHorizontal"
+                        IsBackEnabled="False"
+                        PaneDisplayMode="Top"
+                        IsSettingsVisible="True"
+                        x:FieldModifier="internal"
+                        IsBackButtonVisible="Visible"
+                        BackRequested="NavView_BackRequested"
+                        ItemInvoked="NavViewHorizontal_ItemInvoked">
+            <NavigationView.MenuItems>
+                <!--Buradaki margin değerleri mümkünse değiştirilecek. MaxHeight değişecek. Nav.Icon olarak kullanmak yerine tek satırda kullanılacak-->
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="HomeView" Icon="Home" Margin="-5, -17, -5, 0" MaxHeight="38"/>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="GameModeView" Margin="-5, -17, -5, 0" MaxHeight="38">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEC4A;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="WindowsView" Margin="-5, -17, -5, 0" MaxHeight="38">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xF259;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="CleaningView" Margin="-5, -17, -5, 0" MaxHeight="38">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEA99;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="TroubleshootingView" Margin="-5, -17, -5, 0" MaxHeight="38">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEC7A;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="UpdatesView" Margin="-5, -17, -5, 0" MaxHeight="38">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE777;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="ExtraFeaturesView" Icon="GlobalNavigationButton" Margin="-5, -17, -5, 0" MaxHeight="38"/>
+            </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <Grid>
+                    <NavigationViewItemSeparator/>
+                    <AppBarButton x:Name="ForwardButton"
+                          x:FieldModifier="internal"
+                          MinWidth="38" MaxWidth="38"
+                          MinHeight="48" MaxHeight="48"
+                          HorizontalAlignment="Right"
+                          Click="ForwardButton_Click"
+                          Margin="0, -9, -4, 0" IsEnabled="False">
+                        <AppBarButton.Icon>
+                            <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
+                              FontSize="9" Margin="0, 2, 0, 0" Glyph="&#xE72A;"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <NavigationViewItemSeparator/>
+                </Grid>
+            </NavigationView.PaneFooter>
+        </NavigationView>
+        <NavigationView x:Name="NavViewVertical"
+                    x:FieldModifier="internal"
+                    Margin="-5, 28, 0, 0"
+                    IsBackButtonVisible="Collapsed"
+                    PaneTitle="Winmenu"
+                    IsPaneOpen="False" OpenPaneLength="155"
+                    BackRequested="NavView_BackRequested"
+                    PaneOpened="NavViewVertical_PaneChanged"
+                    PaneClosed="NavViewVertical_PaneChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Tag="GeneralView" Icon="World"/>
+                <NavigationViewItemSeparator/>
+            </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <AppBarButton x:Name="HideButton"
+                          x:FieldModifier="internal"
+                          Margin="2, 0, 0, -9"
+                          Click="HideButton_Click"
+                          MinWidth="44" MaxWidth="44"
+                          MinHeight="48" MaxHeight="48">
+                    <AppBarButton.Icon>
+                        <FontIcon FontFamily="{StaticResource SymbolThemeFontFamily}"
+                              FontSize="9" Glyph="&#xED1A;"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+            </NavigationView.PaneFooter>
+            <NavigationView.Content>
+                <Frame x:Name="ContentFrame" x:FieldModifier="internal" Navigated="ContentFrame_Navigated">
+                    <Frame.ContentTransitions>
+                        <TransitionCollection>
+                            <NavigationThemeTransition/>
+                        </TransitionCollection>
+                    </Frame.ContentTransitions>
+                    <Frame.KeyboardAccelerators>
+                        <KeyboardAccelerator Key="F1" Invoked="Help_Invoked"/>
+                        <KeyboardAccelerator Key="F2" Invoked="Back_Invoked"/>
+                        <KeyboardAccelerator Key="F2" Invoked="Back_Invoked" Modifiers="Control"/>
+                        <KeyboardAccelerator Key="PageUp" Invoked="Back_Invoked"/>
+                        <KeyboardAccelerator Key="PageUp" Invoked="Back_Invoked" Modifiers="Control"/>
+                        <KeyboardAccelerator Key="F3" Invoked="Forward_Invoked"/>
+                        <KeyboardAccelerator Key="F3" Invoked="Forward_Invoked" Modifiers="Control"/>
+                        <KeyboardAccelerator Key="PageDown" Invoked="Forward_Invoked"/>
+                        <KeyboardAccelerator Key="PageDown" Invoked="Forward_Invoked" Modifiers="Control"/>
+                        <KeyboardAccelerator Key="F4" Invoked="Close_Invoked"/>
+                        <KeyboardAccelerator Key="F5" Invoked="Refresh_Invoked"/>
+                        <KeyboardAccelerator Key="F6" Invoked="Theme_Invoked"/>
+                        <KeyboardAccelerator Key="F7" Invoked="BayramReis_Invoked"/>
+                        <KeyboardAccelerator Key="F8" Invoked="ReisForm_Invoked"/>
+                        <KeyboardAccelerator Key="F9" Invoked="ReisDownloads_Invoked"/>
+                        <KeyboardAccelerator Key="F10" Invoked="ReisGames_Invoked"/>
+                        <KeyboardAccelerator Key="F11" Invoked="WinState_Invoked"/>
+                        <KeyboardAccelerator Key="F12" Invoked="ReisProduction_Invoked"/>
+                        <KeyboardAccelerator Key="Enter" Invoked="WinState_Invoked" Modifiers="Menu"/>
+                        <KeyboardAccelerator Key="Back" Invoked="ShowHide_Invoked" Modifiers="Control"/>
+                        <KeyboardAccelerator Key="Back" Invoked="Pane_Invoked"/>
+                        <KeyboardAccelerator Key="Insert" Invoked="PaneTop_Invoked"/>
+                        <KeyboardAccelerator Key="Escape" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Home" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number1" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad1" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number2" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad2" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number3" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad3" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number4" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad4" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number5" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad5" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number6" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad6" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number7" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad7" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="Number8" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="NumberPad8" Invoked="NavView_Invoked"/>
+                        <KeyboardAccelerator Key="End" Invoked="NavView_Invoked"/>
+                    </Frame.KeyboardAccelerators>
+                </Frame>
+            </NavigationView.Content>
+        </NavigationView>
+        <AutoSuggestBox x:Name="SearchBox" x:FieldModifier="internal"
+                    QueryIcon="Find" Margin="954, -65, 211, 0"
+                    VerticalAlignment="Center"
+                    GotFocus="SearchBox_GotFocus"
+                    LostFocus="SearchBox_LostFocus"
+                    QuerySubmitted="SearchBox_QuerySubmitted"
+                    SuggestionChosen="SearchBox_SuggestionChosen">
+            <AutoSuggestBox.KeyboardAccelerators>
+                <KeyboardAccelerator Key="Enter" Invoked="SearchBox_Invoked"/>
+                <KeyboardAccelerator Key="Space" Invoked="SearchBox_Invoked"/>
+                <KeyboardAccelerator Modifiers="Control" Key="Tab" Invoked="SearchBox_Invoked"/>
+            </AutoSuggestBox.KeyboardAccelerators>
+        </AutoSuggestBox>
+    </Grid>
+</Page>
