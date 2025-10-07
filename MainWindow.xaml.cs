@@ -119,7 +119,7 @@ internal sealed partial class MainWindow : WindowEx
                     userSettings.LastView = selectedItem.Tag.ToString() ?? "HomeView";
                 else
                     userSettings.LastView = "HomeView";
-                if (Winmenu != null)
+                if (Winmenu is not null)
                 {
                     if (appWindow.Presenter.Kind is AppWindowPresenterKind.FullScreen)
                         userSettings.WinState = "FullScreen";
